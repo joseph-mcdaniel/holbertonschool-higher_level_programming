@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "import this" | python
+python -c 'import this'
