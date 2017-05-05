@@ -10,5 +10,5 @@ if __name__ == "__main__":
     else:
         print("{:d} arguments:".format(len(argv) - 1))
         for i in argv:
-            if len(argv.index(i)) > 0:
+            if argv.index(i) > 0:
                 print("{0}: {1}".format(argv.index(i), i))
