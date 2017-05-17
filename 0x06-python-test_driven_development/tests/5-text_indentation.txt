@@ -1,0 +1,31 @@
+# import
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# simple
+>>> text_indentation("hello?")
+hello?
+
+# two strings
+>>> text_indentation("hello?" "hi.")
+hello?
+
+hi.
+
+# empty string
+>>> text_indentation("")
+
+# blank string
+>>> text_indentation(" ")
+ >>>
+
+# no arg
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+# int
+>>> text_indentation(42)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
