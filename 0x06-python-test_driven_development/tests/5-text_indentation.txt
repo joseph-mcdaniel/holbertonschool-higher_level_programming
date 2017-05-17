@@ -4,13 +4,14 @@
 # simple
 >>> text_indentation("hello?")
 hello?
+<BLANKLINE>
 
 # two strings
 >>> text_indentation("hello?" "hi.")
 hello?
-
+<BLANKLINE>
 hi.
-
+<BLANKLINE>
 
 # no arg
 >>> text_indentation()
