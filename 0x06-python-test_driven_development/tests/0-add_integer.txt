@@ -1,0 +1,43 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# simple
+>>> add_integer(1, 2)
+3
+
+# negative
+>>> add_integer(100, -2)
+98
+
+# float and int
+>>> add_integer(40.0, 2)
+42
+
+# string and int
+>>> add_integer("dud", 42)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# int and string
+>>> add_integer(42, "foo")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# no arg
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+# extra int
+>>> add_integer(42, 98, 7)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes 2 positional arguments but 3 were given
+
+# extra string
+>>> add_integer(42, 98, "dud")
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes 2 positional arguments but 3 were given
