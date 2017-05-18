@@ -24,3 +24,10 @@ TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
+
+# int and str
+>>> say_my_name(42, "Dudley")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
