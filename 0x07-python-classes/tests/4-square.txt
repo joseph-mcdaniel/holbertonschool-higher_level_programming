@@ -1,1 +1,25 @@
-# Tests
+# import
+>>> Square = __import__('4-square').Square
+
+# simple
+>>> my_square = Square(98)
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Area: 9604 for size: 98
+
+# nothing
+>>> my_square = Square()
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Area: 0 for size: 0
+
+# negative
+>>> my_square = Square(-42)
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+# string
+>>> my_square = Square("dud")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
