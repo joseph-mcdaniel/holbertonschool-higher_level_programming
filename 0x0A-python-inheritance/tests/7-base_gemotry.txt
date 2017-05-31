@@ -1,0 +1,24 @@
+# import
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+# simple
+>>> simple = BaseGeometry()
+>>> simple.integer_validator("simple", 42)
+
+# negative
+>>> simple.integer_validator("simple", -42)
+Traceback (most recent call last):
+...
+ValueError: simple must be greater than 0
+
+# empty
+>>> simple.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+# two strings
+>>> simple.integer_validator("simple", "sample")
+Traceback (most recent call last):
+...
+TypeError: simple must be an integer
