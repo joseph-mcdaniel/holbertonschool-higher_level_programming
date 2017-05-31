@@ -1,0 +1,40 @@
+# import
+>>> MyList = __import__('1-my_list').MyList
+
+# simple descend
+>>> descend = MyList([3, 2, 1])
+>>> print(descend)
+[3, 2, 1]
+
+# simple ascend
+>>> ascend = MyList([1, 2, 3])
+>>> print(ascend)
+[1, 2, 3]
+
+# mixed list
+>>> mixed = MyList([3, 1, 5, 4, 2])
+>>> print(mixed)
+[3, 1, 5, 4, 2]
+>>> mixed.print_sorted()
+[1, 2, 3, 4, 5]
+
+# negative mixed
+>>> negative = MyList([-3, -1, -5, -4, -2])
+>>> print(negative)
+[-3, -1, -5, -4, -2]
+>>> negative.print_sorted()
+[-5, -4, -3, -2, -1]
+
+# strings
+>>> strings = MyList(["hello", "world", "holberton"])
+>>> print(strings)
+['hello', 'world', 'holberton']
+>>> strings.print_sorted()
+['hello', 'holberton', 'world']
+
+# bool
+>>> bools = MyList([True, False, True])
+>>> print(bools)
+[True, False, True]
+>>> bools.print_sorted()
+[False, True, True]
