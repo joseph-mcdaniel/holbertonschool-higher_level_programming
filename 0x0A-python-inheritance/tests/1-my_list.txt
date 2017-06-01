@@ -18,6 +18,31 @@
 >>> mixed.print_sorted()
 [1, 2, 3, 4, 5]
 
+# append
+>>> test = MyList()
+>>> test.append(3)
+>>> test.append(1)
+>>> test.append(5)
+>>> test.append(4)
+>>> test.append(2)
+>>> print(test)
+[3, 1, 5, 4, 2]
+>>> test.print_sorted()
+[1, 2, 3, 4, 5]
+
+# empty
+>>> empty1 = MyList([])
+>>> print(empty1)
+[]
+>>> empty1.print_sorted()
+[]
+
+# sorted new list
+>>> list1 = MyList([3, 1, 5, 4, 2])
+>>> newlist = list1
+>>> newlist.print_sorted()
+[1, 2, 3, 4, 5]
+
 # negative mixed
 >>> negative = MyList([-3, -1, -5, -4, -2])
 >>> print(negative)
