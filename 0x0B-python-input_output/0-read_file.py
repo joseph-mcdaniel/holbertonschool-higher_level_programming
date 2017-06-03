@@ -2,5 +2,4 @@
 def read_file(filename=""):
     with open('my_file_0.txt', 'r') as f:
         x = f.read()
-    f.closed
-    print(x)
+        print(x)
