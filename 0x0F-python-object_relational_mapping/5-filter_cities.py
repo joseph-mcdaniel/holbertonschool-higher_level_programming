@@ -12,4 +12,4 @@ if __name__ == "__main__":
     query = "SELECT name FROM cities WHERE state_id = (SELECT id FROM states \
     WHERE name = '{}') ORDER BY cities.id ASC".format(argv[4])
     cur.execute(query)
-    print(",".join([row[0] for row in cur.fetchall()]))
+    print(", ".join([row[0] for row in cur.fetchall()]))
