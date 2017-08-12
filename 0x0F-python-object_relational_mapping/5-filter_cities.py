@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-akes in the name of a state as an argument and lists all cities of that state
+takes in the name of a state as an argument and lists all cities of that state
 """
 
 if __name__ == "__main__":
