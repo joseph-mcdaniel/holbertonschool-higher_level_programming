@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 class Rectangle:
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -40,8 +40,8 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ("")
-
-        return (str("#") * self.__width + "\n") * self.__height
+        s = (str("#") * self.__width + "\n") * self.__height
+        return s[:-1]
 
     def __repr__(self):
         return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
